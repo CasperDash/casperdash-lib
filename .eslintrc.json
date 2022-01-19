@@ -1,0 +1,50 @@
+{
+	"env": {
+		"browser": true,
+		"commonjs": true,
+		"node": true,
+		"es6": true,
+		"jest": true,
+		"webextensions": true,
+		"es2020": true
+	},
+	"globals": {
+		"describe": true,
+		"expect": true,
+		"it": true,
+		"test": true,
+		"page": true,
+		"browser": true,
+		"context": true,
+		"jestPuppeteer": true,
+		"process": true,
+		"__dirname": true
+	},
+	"parserOptions": {
+		"ecmaVersion": 6,
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"modules": true,
+			"classes": true
+		}
+	},
+	"parser": "babel-eslint",
+	"plugins": ["import", "deprecate"],
+	"extends": ["eslint:recommended", "prettier"],
+	"rules": {
+		"no-mixed-spaces-and-tabs": 0,
+		"no-unused-vars": 2,
+		"no-var": 2,
+
+		"no-console": ["error", { "allow": ["error", "info", "warn"] }],
+		"complexity": [2, 10],
+		"no-multiple-empty-lines": [2, { "max": 2, "maxEOF": 1 }],
+		"import/order": [
+			2,
+			{
+				"groups": ["builtin", "external", "internal", "parent", "sibling", "index"],
+				"newlines-between": "never"
+			}
+		]
+	}
+}
