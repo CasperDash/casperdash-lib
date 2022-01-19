@@ -1,5 +1,3 @@
-import { CoreClass } from 'typescript-library-template';
-import { ModuleClass } from 'typescript-library-template/module';
+const { casperServices } = require('casperdash-lib');
 
-new CoreClass().print();
-new ModuleClass().print();
+console.log(casperServices.toCLMap(new Map([['test', 'test']])));

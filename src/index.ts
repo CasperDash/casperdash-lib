@@ -1,1 +1,1 @@
-export { CoreClass } from '@src/core';
+export * as casperServices from './services/casperServices';
